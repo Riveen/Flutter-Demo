@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'Constants/button_constants.dart';
-import 'btn_widget.dart';
+import '../Constants/button_constants.dart';
+import '../Home Widgets/btn_widget.dart';
 
 class MenuWidget extends StatelessWidget {
   const MenuWidget({

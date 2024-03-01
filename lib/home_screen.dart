@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_demo/Constants/navbar_items.dart';
-import 'package:flutter_application_demo/cards_list.dart';
+import 'package:flutter_application_demo/Home%20Widgets/card_widget.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'Constants/image_files.dart';
-import 'image_slider.dart';
-import 'menu_widget.dart';
-import 'swiper_widget.dart';
+import 'Home Components/image_slider.dart';
+import 'Home Components/menu_widget.dart';
+import 'Home Widgets/swiper_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

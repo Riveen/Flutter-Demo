@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Constants/button_constants.dart';
+import '../Constants/button_constants.dart';
 import 'btn_widget.dart';
 
 class MoreDialog extends StatelessWidget {
