@@ -16,8 +16,8 @@ class SwiperWidget extends StatelessWidget {
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
 
-    double itemWidth = screenWidth * 0.8; // Adjust percentage as needed
-    double itemHeight = screenHeight * 0.3; // Adjust percentage as needed
+    double itemWidth = screenWidth * 0.8;
+    double itemHeight = screenHeight * 0.3;
 
     return Swiper(
       itemWidth: itemWidth, //365
