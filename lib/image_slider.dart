@@ -17,10 +17,16 @@ class _ImageSliderState extends State<ImageSlider> {
 
   @override
   Widget build(BuildContext context) {
+    // Get screen size
+    Size screenSize = MediaQuery.of(context).size;
+
+    // Calculate height based on screen height
+    double sliderHeight = screenSize.height * 0.2;
+
     return CarouselSlider(
       options: CarouselOptions(
         autoPlay: true,
-        height: 160,
+        height: sliderHeight, //160
         autoPlayCurve: Curves.fastOutSlowIn,
         autoPlayAnimationDuration: const Duration(milliseconds: 800),
         autoPlayInterval: const Duration(seconds: 2),
