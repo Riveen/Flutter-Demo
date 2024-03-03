@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../Constants/button_constants.dart';
-import '../Home Widgets/btn_widget.dart';
+import 'btn_widget.dart';
 
 class MenuWidget extends StatelessWidget {
   const MenuWidget({
@@ -39,11 +39,11 @@ class MenuWidget extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            for (final buttonData in ButtonConstants.buttons[2])
+            for (int i = 0; i < (ButtonConstants.buttons[2].length) - 1; i++)
               BtnWidget(
-                icon: buttonData.icon,
-                text: buttonData.text,
-                screen: buttonData.screen,
+                icon: ButtonConstants.buttons[2][i].icon,
+                text: ButtonConstants.buttons[2][i].text,
+                screen: ButtonConstants.buttons[2][i].screen,
               ),
             const BtnWidget(
               icon: Icons.more_horiz_rounded,

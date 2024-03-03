@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_demo/Home%20Widgets/more_menu_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../Home Components/menu_widget.dart';
 
 class BtnWidget extends StatelessWidget {
   final String text;
@@ -69,13 +69,16 @@ class BtnWidget extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
             ),
-            content: const MenuWidget(),
+            content: const MoreMenuWidget(),
             actions: [
               TextButton(
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
-                child: const Text("Close"),
+                child: const Text(
+                  "Close",
+                  style: TextStyle(color: Color.fromARGB(255, 8, 58, 99)),
+                ),
               ),
             ],
           ),

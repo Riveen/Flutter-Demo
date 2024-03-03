@@ -4,7 +4,7 @@ import 'package:flutter_application_demo/Home%20Widgets/card_widget.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'Constants/image_files.dart';
 import 'Home Components/image_slider.dart';
-import 'Home Components/menu_widget.dart';
+import 'Home Widgets/menu_widget.dart';
 import 'Home Widgets/swiper_widget.dart';
 
 class HomeScreen extends StatefulWidget {
