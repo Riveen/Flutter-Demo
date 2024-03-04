@@ -19,9 +19,9 @@ class _HomeScreenState extends State<HomeScreen> {
   int navCurrentIndex = 0;
 
   List<CardsList> cards = const [
-    CardsList(bkgImagePath: 'images/back1.jpg', cardTitle: "ReQuest 101"),
-    CardsList(bkgImagePath: 'images/back2.jpg', cardTitle: "ReQuest 002"),
-    CardsList(bkgImagePath: 'images/back3.jpg', cardTitle: "ReQuest 105"),
+    CardsList(cardTitle: "ReQuest 101"),
+    CardsList(cardTitle: "ReQuest 002"),
+    CardsList(cardTitle: "ReQuest 105"),
   ];
 
   @override

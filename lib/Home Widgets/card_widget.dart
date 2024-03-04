@@ -1,26 +1,28 @@
+import 'dart:ui'; // Import this for using the BackdropFilter widget
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CardsList extends StatelessWidget {
-  const CardsList(
-      {super.key, required this.bkgImagePath, required this.cardTitle});
+  const CardsList({
+    Key? key,
+    required this.cardTitle,
+  }) : super(key: key);
 
   final String cardTitle;
-  final String bkgImagePath;
 
   @override
   Widget build(BuildContext context) {
-    return Opacity(
-      opacity: 0.9,
-      child: Container(
-        width: MediaQuery.of(context).size.width,
-        height: 160.0,
-        padding: const EdgeInsets.all(20),
-        decoration: BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage(bkgImagePath), fit: BoxFit.fill),
-          borderRadius: BorderRadius.circular(15),
-        ),
+    return Container(
+      width: MediaQuery.of(context).size.width,
+      height: 160.0,
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(15),
+        color: Colors.blue.withOpacity(0.5),
+      ),
+      child: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 1, sigmaY: 1),
         child: Row(
           children: [
             Expanded(
@@ -33,9 +35,10 @@ class CardsList extends StatelessWidget {
                     child: Text(
                       cardTitle,
                       style: GoogleFonts.poppins(
-                          fontSize: 30,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.white),
+                        fontSize: 30,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                   const SizedBox(
@@ -47,9 +50,10 @@ class CardsList extends StatelessWidget {
                       child: Text(
                         "<<Details included here in brief>>",
                         style: GoogleFonts.poppins(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
-                            color: Colors.white),
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   )
